@@ -2,7 +2,7 @@
 
 **Module:** 07 – Playbook OS
 
-**Version:** 1.0.0
+**Version:** 2.0.0
 
 **Status:** Stable
 
@@ -12,21 +12,44 @@
 
 # Purpose
 
-This document serves as the master navigation hub for Playbook OS.
+This document serves as the official navigation center for Playbook OS.
 
-It provides a structured overview of every document, review artifact, standard, and operational playbook contained within this module.
+Its primary responsibility is to help both humans and AI systems quickly locate documentation, operational skills, standards, reviews, and governance artifacts within Module 07.
 
-Playbook OS transforms organizational knowledge into executable operational assets, enabling both humans and AI Agents to perform standardized workflows with predictable results.
+Unlike the README, which explains the philosophy and mission of Playbook OS, this document focuses entirely on navigation, discoverability, and module organization.
 
 ---
 
-# Module Navigation
+# Navigation Philosophy
+
+Playbook OS separates knowledge into dedicated navigation layers.
+
+Each document answers one fundamental question.
+
+| Document | Purpose |
+|----------|---------|
+| README | What is Playbook OS? |
+| INDEX | What exists inside Module 07? |
+| MASTER-SKILL-INDEX | What skills are available? |
+| SKILL-GRAPH | How are skills connected? |
+| SKILL-TEMPLATE | How should every Playbook be written? |
+| Playbooks | How is one specific skill executed? |
+
+This separation keeps the architecture clean, scalable, and AI-friendly.
+
+---
+
+# Module Structure
 
 ```text
 07-playbooks/
 
 ├── README.md
 ├── INDEX.md
+├── MASTER-SKILL-INDEX.md
+├── SKILL-GRAPH.md
+├── SKILL-TEMPLATE.md
+│
 ├── ARCHITECTURE.md
 ├── BASELINE.md
 ├── CHANGELOG.md
@@ -34,66 +57,36 @@ Playbook OS transforms organizational knowledge into executable operational asse
 ├── ROADMAP.md
 ├── RELEASE.md
 │
-├── AR-001-Playbook-Architecture-Review.md
-├── CR-001-Playbook-Consistency-Review.md
-├── DR-001-Playbook-Dependency-Review.md
-├── TR-001-Playbook-Traceability-Review.md
+├── Review Layer
+│   ├── AR-001
+│   ├── CR-001
+│   ├── DR-001
+│   └── TR-001
 │
-├── DOC-001-Playbook-Standard.md
-├── DOC-002-Playbook-Architecture.md
-├── DOC-003-Playbook-Lifecycle.md
-├── DOC-004-Playbook-Authoring-Standard.md
-├── DOC-005-Playbook-Validation-System.md
-├── DOC-006-Playbook-Version-Control.md
-├── DOC-007-Playbook-Execution-Framework.md
-├── DOC-008-Playbook-Composition-System.md
-├── DOC-009-Playbook-Reusability-System.md
-├── DOC-010-Playbook-Library-Management.md
-├── DOC-011-Playbook-Quality-System.md
-├── DOC-012-Playbook-Classification-System.md
-├── DOC-013-Playbook-Automation-System.md
-├── DOC-014-Playbook-Governance.md
-└── DOC-015-Playbook-Release-Checklist.md
+├── Core Documentation
+│   ├── DOC-001
+│   ├── DOC-002
+│   ├── ...
+│   └── DOC-015
 │
-├── PB-001-English-Lesson-Playbook.md
-├── PB-002-...
-├── PB-003-...
-└── ...
+└── Playbook Library
+    ├── PB-001
+    ├── PB-002
+    ├── ...
+    └── PB-XXX
 ```
 
 ---
 
 # Module Layers
 
-## Control Layer
+Playbook OS is organized into five architectural layers.
 
-The governance layer responsible for defining the identity, structure, lifecycle, release process, roadmap, and compliance requirements of Playbook OS.
+## 1. Control Layer
 
----
+Responsible for governance and module management.
 
-## Review Layer
-
-The quality assurance layer responsible for reviewing architecture, consistency, dependencies, and traceability across the entire module.
-
----
-
-## Core Documentation
-
-The engineering knowledge layer that defines how Playbooks are designed, authored, executed, validated, versioned, classified, and governed.
-
----
-
-## Playbook Library
-
-The execution layer containing reusable operational workflows.
-
-Each Playbook documents one standardized process and can be executed independently by humans or AI Agents.
-
----
-
-# Document Categories
-
-## Governance
+Documents include:
 
 - README
 - INDEX
@@ -106,45 +99,179 @@ Each Playbook documents one standardized process and can be executed independent
 
 ---
 
-## Architecture Review
+## 2. Review Layer
 
-- AR-001
+Responsible for architectural verification and documentation quality.
 
----
+Includes:
 
-## Consistency Review
-
-- CR-001
-
----
-
-## Dependency Review
-
-- DR-001
+- Architecture Review
+- Consistency Review
+- Dependency Review
+- Traceability Review
 
 ---
 
-## Traceability Review
+## 3. Core Documentation
 
-- TR-001
+Defines the engineering standards for creating, validating, governing, and maintaining Playbooks.
+
+Includes:
+
+- Standards
+- Architecture
+- Lifecycle
+- Validation
+- Version Control
+- Governance
+- Automation
+- Classification
+- Quality
+- Release
 
 ---
 
-## Standards
+## 4. Skill Management Layer
 
-- DOC-001 → DOC-015
+Provides the intelligence required for AI Directors and future automation systems to locate, organize, and orchestrate operational skills.
+
+Includes:
+
+- MASTER-SKILL-INDEX
+- SKILL-GRAPH
+- SKILL-TEMPLATE
+
+This layer transforms Playbook OS from a documentation repository into an operational intelligence system.
 
 ---
 
-## Operational Playbooks
+## 5. Playbook Library
 
-- PB-001 → PB-XXX
+Contains executable operational skills.
 
-The Playbook Library is intentionally designed without an upper limit to support long-term expansion.
+Each Playbook represents exactly one reusable capability.
+
+Playbooks are organized into functional domains and can be combined into larger production workflows.
 
 ---
 
-# Dependency Map
+# Functional Domains
+
+The Playbook Library is organized into operational domains.
+
+Examples include:
+
+- Content Development
+- Story Engineering
+- Character Production
+- World Building
+- Asset Creation
+- Prompt Engineering
+- Google Flow
+- Veo Production
+- Video Editing
+- Thumbnail Design
+- SEO Optimization
+- Publishing
+- Analytics
+- Quality Assurance
+- Automation
+
+Each domain may contain multiple Playbooks.
+
+---
+
+# AI Navigation Model
+
+When receiving a production request, AI systems navigate Playbook OS using the following model.
+
+```text
+User Request
+      │
+      ▼
+Determine Goal
+      │
+      ▼
+Identify Capability
+      │
+      ▼
+Locate Skill Category
+      │
+      ▼
+Open MASTER-SKILL-INDEX
+      │
+      ▼
+Select Playbook
+      │
+      ▼
+Execute Skill
+      │
+      ▼
+Validate Output
+      │
+      ▼
+Return Result
+```
+
+This model enables consistent execution without relying on ad hoc prompting.
+
+---
+
+# Reading Paths
+
+## Human Learning Path
+
+Recommended order for first-time readers.
+
+1. README
+2. INDEX
+3. ARCHITECTURE
+4. BASELINE
+5. CONFORMANCE
+6. ROADMAP
+7. Core Documentation
+8. Review Documents
+9. Playbook Library
+
+---
+
+## AI Execution Path
+
+Operational order for AI Directors.
+
+```text
+User Goal
+
+↓
+
+Capability Detection
+
+↓
+
+MASTER-SKILL-INDEX
+
+↓
+
+Playbook Selection
+
+↓
+
+Playbook Execution
+
+↓
+
+Validation
+
+↓
+
+Output
+```
+
+---
+
+# Relationship with Other Modules
+
+Playbook OS consumes knowledge from previous modules.
 
 ```text
 Foundation OS
@@ -166,72 +293,53 @@ Distribution OS
         │
         ▼
 Playbook OS
-        │
-        ├── Template Library
-        ├── Prompt Engine
-        ├── Runtime Engine
-        ├── AI Agent Framework
-        └── Future Modules
 ```
 
-Playbook OS consumes knowledge from Modules 01–06 and exposes standardized operational workflows to downstream systems.
+Playbook OS then provides operational intelligence to:
 
----
-
-# Reading Order
-
-To fully understand Playbook OS, documents should be read in the following order:
-
-1. README
-2. INDEX
-3. ARCHITECTURE
-4. BASELINE
-5. CONFORMANCE
-6. ROADMAP
-7. Core Documentation (DOC-001 → DOC-015)
-8. Review Documents
-9. Playbook Library (PB Series)
+- Prompt Engine
+- Runtime Engine
+- AI Director
+- AI Agent Framework
+- Future Automation Systems
 
 ---
 
 # Expansion Strategy
 
-The Playbook Library is expected to grow continuously.
+Playbook OS is designed for continuous growth.
 
-Example categories include:
+New operational domains, Playbooks, and Skill Categories may be added without changing the overall architecture.
 
-- Education
-- Storytelling
-- Character Creation
-- Animation
-- AI Prompt Engineering
-- Google Flow
-- Veo
-- Thumbnail Design
-- SEO
-- Publishing
-- Analytics
-- Automation
-- Quality Assurance
-- Marketing
-- Business Operations
-
-Each category may contain dozens or hundreds of specialized playbooks while remaining fully compatible with the Playbook OS architecture.
+This ensures long-term scalability while preserving consistency across the entire ecosystem.
 
 ---
 
 # Index Maintenance
 
-This index must be updated whenever:
+This document must be updated whenever:
 
-- New Core Documentation is added.
-- New Review Documents are introduced.
-- New Playbook categories are created.
-- Module architecture changes.
-- Governance rules are updated.
+- Module structure changes.
+- New navigation documents are added.
+- New Skill Management documents are introduced.
+- New Playbook domains are created.
+- Governance rules change.
 
-Maintaining an accurate index ensures discoverability, consistency, and long-term maintainability of the entire Playbook ecosystem.
+Maintaining an accurate index ensures discoverability, consistency, and long-term maintainability.
 
 ---
+
+# Document Status
+
+**Current Version:** 2.0.0
+
+**Status:** Stable
+
+**Maintained By:** Wild Story Lab OS
+
+**Next Review:** Defined in ROADMAP.md
+
+---
+
 
 End of Document
