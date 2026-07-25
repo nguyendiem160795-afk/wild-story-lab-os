@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: PB-024-Validate-Thumbnail-Package
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # PB-024 --- Validate Thumbnail Package
 
 > **Module:** 07-playbook-os\
@@ -152,3 +167,20 @@ compliant, and consistent with the approved creative direction.
   1.0.0     Initial Release
 
 **End of Playbook**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+- [ ] Quality gate passed
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

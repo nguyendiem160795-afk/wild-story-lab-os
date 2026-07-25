@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: PB-021-Generate-Subtitle-Package
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # PB-021 --- Generate Subtitle Package
 
 > **Module:** 07-playbook-os\
@@ -166,3 +181,20 @@ Subtitle Package
   1.0.0     Initial Release
 
 **End of Playbook**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+- [ ] Quality gate passed
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: PB-017-Generate-Voice-Assets
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # PB-017 --- Generate Voice Assets
 
 > **Module:** 07-playbook-os\
@@ -168,3 +183,20 @@ Voice Assets
   1.0.0     Initial Release
 
 **End of Playbook**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+- [ ] Quality gate passed
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

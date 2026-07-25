@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: GOVERNANCE
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # GOVERNANCE.md
 
 > **Module:** 07 -- Playbook OS **Layer:** Skill Management **Document

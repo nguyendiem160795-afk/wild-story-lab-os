@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: PB-035-Automation-Orchestration
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # PB-035 --- Automation Orchestration
 
 > **Module:** 07-playbook-os (Extension)\
@@ -170,3 +185,19 @@ Automation
   1.0.0     Initial Release
 
 **End of Playbook**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

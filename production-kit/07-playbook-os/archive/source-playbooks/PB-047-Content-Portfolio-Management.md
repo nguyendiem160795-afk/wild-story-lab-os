@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: PB-047-Content-Portfolio-Management
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # PB-047 --- Content Portfolio Management
 
 > **Module:** 07-playbook-os (Advanced) **Playbook ID:** PB-047
@@ -167,3 +182,19 @@ Content Portfolio
   1.0.0     Initial Release
 
 **End of Playbook**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

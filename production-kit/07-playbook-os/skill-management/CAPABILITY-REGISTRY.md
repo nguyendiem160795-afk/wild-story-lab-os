@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: CAPABILITY-REGISTRY
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # CAPABILITY-REGISTRY.md
 
 > **Module:** 07 -- Playbook OS\

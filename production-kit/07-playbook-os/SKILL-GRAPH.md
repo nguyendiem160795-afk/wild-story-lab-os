@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: SKILL-GRAPH
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # SKILL GRAPH
 
 **Module:** 07 – Playbook OS

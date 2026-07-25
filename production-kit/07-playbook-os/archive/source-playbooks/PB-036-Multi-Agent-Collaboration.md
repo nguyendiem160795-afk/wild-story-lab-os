@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: PB-036-Multi-Agent-Collaboration
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # PB-036 --- Multi-Agent Collaboration
 
 > **Module:** 07-playbook-os (Extension) **Playbook ID:** PB-036
@@ -167,3 +182,19 @@ AI Team
   1.0.0     Initial Release
 
 **End of Playbook**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

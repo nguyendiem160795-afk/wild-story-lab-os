@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: PB-059-AI-Center-of-Excellence
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # PB-059 --- AI Center of Excellence (AI CoE)
 
 > **Module:** 08-enterprise-governance **Playbook ID:** PB-059
@@ -186,3 +201,19 @@ AI Center of Excellence
   1.0.0     Initial Release
 
 **End of Playbook**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

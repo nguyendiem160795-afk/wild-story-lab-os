@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: PB-091-Register-AI-Asset
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # PB-091 --- Register AI Asset
 
 > **Module:** 11 -- Enterprise Assets
@@ -172,3 +187,19 @@ asset.
   1.0.0     Initial Release
 
 **End of Playbook**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

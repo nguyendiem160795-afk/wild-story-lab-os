@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: PB-058-Organization-Change-Management
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # PB-058 --- Organization Change Management
 
 > **Module:** 08-enterprise-governance **Playbook ID:** PB-058
@@ -170,3 +185,19 @@ Organization Change
   1.0.0     Initial Release
 
 **End of Playbook**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

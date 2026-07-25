@@ -1,3 +1,22 @@
+# BASELINE
+
+## Execution Contract
+- ID: BASELINE
+- Status: Executable Draft
+- Owner: Module07
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Success Criteria
+
+## Failure Recovery
+
+---
+
 # Module 07 — Playbook OS Baseline
 
 **Module:** 07 – Playbook OS

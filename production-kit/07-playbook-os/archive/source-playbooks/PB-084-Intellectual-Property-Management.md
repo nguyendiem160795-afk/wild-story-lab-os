@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: PB-084-Intellectual-Property-Management
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # PB-084 --- Intellectual Property Management
 
 > **Module:** 11-enterprise-assets **Playbook ID:** PB-084 **Version:**
@@ -174,3 +189,19 @@ Intellectual Property Management
   1.0.0     Initial Release
 
 **End of Playbook**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

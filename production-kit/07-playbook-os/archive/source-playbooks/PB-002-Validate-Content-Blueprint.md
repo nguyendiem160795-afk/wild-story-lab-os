@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: PB-002-Validate-Content-Blueprint
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # PB-002 --- Validate Content Blueprint
 
 > **Module:** Module 07 -- Playbook OS\
@@ -208,3 +223,19 @@ Next: - PB-003 Create Story Package
 -   [ ] Approval recorded
 
 **End of Playbook**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

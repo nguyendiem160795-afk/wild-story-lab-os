@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: SKILLS-CAP-081
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # SKILLS.md
 
 > **Capability ID:** CAP-081\

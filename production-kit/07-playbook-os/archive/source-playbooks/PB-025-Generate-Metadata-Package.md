@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: PB-025-Generate-Metadata-Package
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # PB-025 --- Generate Metadata Package
 
 > **Module:** 07-playbook-os\
@@ -172,3 +187,20 @@ Metadata Package
   1.0.0     Initial Release
 
 **End of Playbook**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+- [ ] Quality gate passed
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: PB-001-English-Lesson-Playbook
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # PB-001 – English Lesson Playbook
 
 **Version:** 1.0.0  

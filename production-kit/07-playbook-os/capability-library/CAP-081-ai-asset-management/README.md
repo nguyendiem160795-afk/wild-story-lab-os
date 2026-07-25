@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: README
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # CAP-081 --- AI Asset Management
 
 > **Capability ID:** CAP-081\

@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: README-source-playbooks
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # Source Playbooks Archive
 
 > **Module:** 07 -- Playbook OS\
@@ -96,3 +111,19 @@ archive/
 ------------------------------------------------------------------------
 
 **End of Document**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

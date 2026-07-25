@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: README-skill-management
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # Skill Management Layer
 
 > **Module:** 07 -- Playbook OS\

@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: SKILL-REGISTRY
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # SKILL-REGISTRY.md
 
 > **Module:** 07 -- Playbook OS\

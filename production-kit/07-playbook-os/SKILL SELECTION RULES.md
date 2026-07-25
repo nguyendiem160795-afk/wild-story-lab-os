@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: SKILL SELECTION RULES
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # SKILL SELECTION RULES
 
 **Module:** 07 – Playbook OS

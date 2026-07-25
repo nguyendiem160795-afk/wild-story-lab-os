@@ -1,3 +1,33 @@
+## Execution Contract
+- ID: PB-060-Enterprise-AI-Operating-Model
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
+# PB-060-Enterprise-AI-Operating-Model
+
+## Metadata
+- ID: PB-060-Enterprise-AI-Operating-Model
+- Status: Draft
+
+## Objective
+
+## Inputs
+
+## Execution Steps
+
+
+---
+
 # PB-060 --- Enterprise AI Operating Model
 
 > **Module:** 08-enterprise-governance **Playbook ID:** PB-060
@@ -189,3 +219,19 @@ Enterprise AI Operating Model
   1.0.0     Initial Release
 
 **End of Playbook**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

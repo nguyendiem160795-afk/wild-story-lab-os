@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: PB-082-Knowledge-Management
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # PB-082 --- Knowledge Management
 
 > **Module:** 11-enterprise-assets **Playbook ID:** PB-082 **Version:**
@@ -173,3 +188,19 @@ Knowledge Management
   1.0.0     Initial Release
 
 **End of Playbook**
+
+
+## Decision Points
+
+## Validation Checklist
+- [ ] Inputs verified
+- [ ] Outputs validated
+
+## Related Capability
+
+## Related Skill
+
+## Automation Hooks
+- Trigger:
+- Inputs:
+- Outputs:

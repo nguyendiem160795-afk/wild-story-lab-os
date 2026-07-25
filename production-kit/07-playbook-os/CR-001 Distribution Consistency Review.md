@@ -1,3 +1,18 @@
+## Execution Contract
+- ID: CR-001 Distribution Consistency Review
+- Version: 1.0
+- Status: Executable Draft
+
+## Objective
+
+## Inputs
+
+## Outputs
+
+## Validation
+
+---
+
 # CR-001 — Playbook OS Consistency Review
 
 **Module:** 07 – Playbook OS
