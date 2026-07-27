@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wildstorylab.dev/schemas/memory.schema.json",
+  "title": "Memory Record Definition",
+  "description": "Canonical schema for persistent and session memory records in the AI Agent Operating System.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "memory_id",
+    "title",
+    "version",
+    "status",
+    "owner",
+    "memory_type",
+    "content",
+    "retention_policy",
+    "metadata"
+  ],
+  "properties": {
+    "memory_id": {
+      "type": "string",
+      "pattern": "^MEM-[A-Z0-9_-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "review",
+        "approved",
+        "production",
+        "deprecated",
+        "archived"
+      ]
+    },
+    "owner": {
+      "type": "string"
+    },
+    "memory_type": {
+      "type": "string",
+      "enum": [
+        "session",
+        "workflow",
+        "project",
+        "agent",
+        "organization",
+        "archive"
+      ]
+    },
+    "content": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "retention_policy": {
+      "type": "object",
+      "required": [
+        "strategy"
+      ],
+      "properties": {
+        "strategy": {
+          "type": "string",
+          "enum": [
+            "temporary",
+            "project_lifetime",
+            "permanent",
+            "archive"
+          ]
+        },
+        "expires_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    },
+    "access_control": {
+      "type": "object",
+      "properties": {
+        "classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted",
+            "confidential"
+          ]
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "created_at",
+        "updated_at",
+        "tags"
+      ],
+      "properties": {
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "related_assets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

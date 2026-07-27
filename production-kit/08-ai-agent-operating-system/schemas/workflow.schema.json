@@ -1,27 +1,26 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://wildstorylab.dev/schemas/agent.schema.json",
-  "title": "AI Agent Definition",
-  "description": "Canonical schema for registering AI Agents in the Wild Story Lab AI Agent Operating System.",
+  "$id": "https://wildstorylab.dev/schemas/workflow.schema.json",
+  "title": "Workflow Definition",
+  "description": "Canonical schema for AI Agent Operating System workflows.",
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "agent_id",
+    "workflow_id",
     "name",
     "version",
     "status",
     "owner",
-    "category",
     "description",
-    "capabilities",
+    "steps",
     "inputs",
     "outputs",
     "metadata"
   ],
   "properties": {
-    "agent_id": {
+    "workflow_id": {
       "type": "string",
-      "pattern": "^AGT-[A-Z0-9_-]+$"
+      "pattern": "^WF-[A-Z0-9_-]+$"
     },
     "name": {
       "type": "string",
@@ -45,19 +44,8 @@
     "owner": {
       "type": "string"
     },
-    "category": {
-      "type": "string"
-    },
     "description": {
       "type": "string"
-    },
-    "capabilities": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "minItems": 1,
-      "uniqueItems": true
     },
     "inputs": {
       "type": "array",
@@ -85,6 +73,50 @@
         "additionalProperties": false
       }
     },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "step_id",
+          "name",
+          "agent",
+          "action"
+        ],
+        "properties": {
+          "step_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "agent": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "depends_on": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "default": []
+          },
+          "retry_limit": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 0
+          },
+          "timeout_seconds": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
     "outputs": {
       "type": "array",
       "items": {
@@ -107,19 +139,22 @@
         "additionalProperties": false
       }
     },
-    "dependencies": {
-      "type": "array",
-      "items": {
-        "type": "string"
+    "validation": {
+      "type": "object",
+      "properties": {
+        "required": {
+          "type": "boolean",
+          "default": true
+        },
+        "quality_gate": {
+          "type": "string"
+        },
+        "review_required": {
+          "type": "boolean",
+          "default": true
+        }
       },
-      "default": []
-    },
-    "permissions": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "default": []
+      "additionalProperties": false
     },
     "metadata": {
       "type": "object",
@@ -143,7 +178,7 @@
             "type": "string"
           }
         },
-        "related_assets": {
+        "related_workflows": {
           "type": "array",
           "items": {
             "type": "string"

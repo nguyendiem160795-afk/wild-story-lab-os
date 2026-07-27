@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wildstorylab.dev/schemas/metadata.schema.json",
+  "title": "Metadata Definition",
+  "description": "Canonical metadata schema for all production assets in the AI Agent Operating System.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "version",
+    "status",
+    "owner",
+    "created_at",
+    "updated_at",
+    "classification",
+    "tags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier of the parent asset."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "review",
+        "approved",
+        "production",
+        "deprecated",
+        "archived"
+      ]
+    },
+    "owner": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "approved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "classification": {
+      "type": "string",
+      "enum": [
+        "public",
+        "internal",
+        "restricted",
+        "confidential"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_assets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "checksum": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    }
+  }
+}

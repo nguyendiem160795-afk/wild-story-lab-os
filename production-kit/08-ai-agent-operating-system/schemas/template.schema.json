@@ -1,27 +1,24 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://wildstorylab.dev/schemas/agent.schema.json",
-  "title": "AI Agent Definition",
-  "description": "Canonical schema for registering AI Agents in the Wild Story Lab AI Agent Operating System.",
+  "$id": "https://wildstorylab.dev/schemas/template.schema.json",
+  "title": "Template Definition",
+  "description": "Canonical schema for reusable templates in the AI Agent Operating System.",
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "agent_id",
+    "template_id",
     "name",
     "version",
     "status",
     "owner",
-    "category",
-    "description",
-    "capabilities",
-    "inputs",
-    "outputs",
+    "template_type",
+    "content",
     "metadata"
   ],
   "properties": {
-    "agent_id": {
+    "template_id": {
       "type": "string",
-      "pattern": "^AGT-[A-Z0-9_-]+$"
+      "pattern": "^TPL-[A-Z0-9_-]+$"
     },
     "name": {
       "type": "string",
@@ -45,21 +42,28 @@
     "owner": {
       "type": "string"
     },
-    "category": {
-      "type": "string"
+    "template_type": {
+      "type": "string",
+      "enum": [
+        "agent",
+        "workflow",
+        "prompt",
+        "knowledge",
+        "memory",
+        "documentation",
+        "schema",
+        "configuration",
+        "example",
+        "other"
+      ]
     },
     "description": {
       "type": "string"
     },
-    "capabilities": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "minItems": 1,
-      "uniqueItems": true
+    "content": {
+      "type": "string"
     },
-    "inputs": {
+    "variables": {
       "type": "array",
       "items": {
         "type": "object",
@@ -78,6 +82,7 @@
             "type": "boolean",
             "default": true
           },
+          "default": {},
           "description": {
             "type": "string"
           }
@@ -85,41 +90,18 @@
         "additionalProperties": false
       }
     },
-    "outputs": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": [
-          "name",
-          "type"
-        ],
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          }
+    "validation": {
+      "type": "object",
+      "properties": {
+        "schema_ref": {
+          "type": "string"
         },
-        "additionalProperties": false
-      }
-    },
-    "dependencies": {
-      "type": "array",
-      "items": {
-        "type": "string"
+        "review_required": {
+          "type": "boolean",
+          "default": true
+        }
       },
-      "default": []
-    },
-    "permissions": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "default": []
+      "additionalProperties": false
     },
     "metadata": {
       "type": "object",

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wildstorylab.dev/schemas/asset.schema.json",
+  "title": "Production Asset Definition",
+  "description": "Canonical schema for production assets managed by the AI Agent Operating System.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "asset_id",
+    "name",
+    "version",
+    "status",
+    "owner",
+    "asset_type",
+    "location",
+    "metadata"
+  ],
+  "properties": {
+    "asset_id": {
+      "type": "string",
+      "pattern": "^AST-[A-Z0-9_-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "review",
+        "approved",
+        "production",
+        "deprecated",
+        "archived"
+      ]
+    },
+    "owner": {
+      "type": "string"
+    },
+    "asset_type": {
+      "type": "string",
+      "enum": [
+        "documentation",
+        "agent",
+        "workflow",
+        "prompt",
+        "knowledge",
+        "memory",
+        "schema",
+        "template",
+        "example",
+        "configuration",
+        "diagram",
+        "media",
+        "other"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string",
+      "description": "Repository-relative path."
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_assets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "created_at",
+        "updated_at",
+        "tags",
+        "classification"
+      ],
+      "properties": {
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted",
+            "confidential"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "checksum": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

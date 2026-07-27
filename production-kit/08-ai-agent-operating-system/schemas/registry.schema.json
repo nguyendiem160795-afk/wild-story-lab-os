@@ -1,27 +1,24 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://wildstorylab.dev/schemas/agent.schema.json",
-  "title": "AI Agent Definition",
-  "description": "Canonical schema for registering AI Agents in the Wild Story Lab AI Agent Operating System.",
+  "$id": "https://wildstorylab.dev/schemas/registry.schema.json",
+  "title": "Registry Definition",
+  "description": "Canonical schema for registries within the AI Agent Operating System.",
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "agent_id",
+    "registry_id",
     "name",
     "version",
     "status",
     "owner",
-    "category",
-    "description",
-    "capabilities",
-    "inputs",
-    "outputs",
+    "registry_type",
+    "entries",
     "metadata"
   ],
   "properties": {
-    "agent_id": {
+    "registry_id": {
       "type": "string",
-      "pattern": "^AGT-[A-Z0-9_-]+$"
+      "pattern": "^REG-[A-Z0-9_-]+$"
     },
     "name": {
       "type": "string",
@@ -45,81 +42,54 @@
     "owner": {
       "type": "string"
     },
-    "category": {
-      "type": "string"
+    "registry_type": {
+      "type": "string",
+      "enum": [
+        "agent",
+        "workflow",
+        "prompt",
+        "knowledge",
+        "memory",
+        "asset",
+        "template",
+        "service",
+        "module",
+        "other"
+      ]
     },
     "description": {
       "type": "string"
     },
-    "capabilities": {
+    "entries": {
       "type": "array",
-      "items": {
-        "type": "string"
-      },
       "minItems": 1,
-      "uniqueItems": true
-    },
-    "inputs": {
-      "type": "array",
       "items": {
         "type": "object",
         "required": [
+          "id",
           "name",
-          "type"
+          "version",
+          "status"
         ],
         "properties": {
+          "id": {
+            "type": "string"
+          },
           "name": {
             "type": "string"
           },
-          "type": {
+          "version": {
             "type": "string"
           },
-          "required": {
-            "type": "boolean",
-            "default": true
+          "status": {
+            "type": "string"
           },
-          "description": {
+          "reference": {
             "type": "string"
           }
         },
         "additionalProperties": false
       }
-    },
-    "outputs": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": [
-          "name",
-          "type"
-        ],
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
-      }
-    },
-    "dependencies": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "default": []
-    },
-    "permissions": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "default": []
     },
     "metadata": {
       "type": "object",
@@ -143,7 +113,7 @@
             "type": "string"
           }
         },
-        "related_assets": {
+        "related_registries": {
           "type": "array",
           "items": {
             "type": "string"
