@@ -1,0 +1,15 @@
+flowchart TD
+    A[Project Start] --> B[Load Runtime Context]
+    B --> C[Story Planning]
+    C --> D[Scene Planning]
+    D --> E[Resolve Assets]
+    E --> F[Generate Prompt]
+    F --> G[Validate Prompt]
+    G --> H{Validation Passed?}
+    H -- No --> F
+    H -- Yes --> I[Render Pipeline]
+    I --> J[Consistency Check]
+    J --> K{QA Passed?}
+    K -- No --> D
+    K -- Yes --> L[Export Package]
+    L --> M[Publish]

@@ -1,0 +1,16 @@
+stateDiagram-v2
+    [*] --> Draft
+
+    Draft --> Planning
+    Planning --> AssetsResolved
+    AssetsResolved --> PromptReady
+    PromptReady --> Validated
+    Validated --> Rendering
+    Rendering --> QA
+    QA --> Published
+    Published --> Archived
+
+    QA --> Planning : Revision Required
+    Rendering --> PromptReady : Retry
+    Validated --> Planning : Validation Failed
+    Archived --> [*]

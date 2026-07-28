@@ -1,0 +1,23 @@
+sequenceDiagram
+    participant D as AI Director (Module 10)
+    participant O as Production Orchestrator
+    participant S as Scene Planner
+    participant A as Asset Resolver
+    participant C as Consistency Manager
+    participant R as Render Pipeline
+    participant Q as QA
+    participant P as Publishing
+
+    D->>O: Start Production
+    O->>S: Build Scene Plan
+    S->>A: Request Asset Package
+    A-->>S: Asset Package Ready
+    S->>O: Scene Plan Complete
+    O->>C: Validate Consistency
+    C-->>O: Validation Passed
+    O->>R: Submit Render Job
+    R-->>O: Render Complete
+    O->>Q: Run Quality Assurance
+    Q-->>O: QA Approved
+    O->>P: Publish Production
+    P-->>D: Production Complete

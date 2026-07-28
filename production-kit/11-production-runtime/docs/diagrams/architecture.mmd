@@ -1,0 +1,21 @@
+flowchart TD
+    A[Idea] --> B[Story Plan]
+    B --> C[Scene Plan]
+    C --> D[Asset Resolver]
+    D --> E[Prompt Generation]
+    E --> F[Consistency Manager]
+    F --> G[Render Pipeline]
+    G --> H[Quality Assurance]
+    H --> I[Publishing]
+
+    subgraph Runtime
+        C
+        D
+        E
+        F
+        G
+    end
+
+    Director[Module 10 AI Director] --> B
+    CharacterOS[Character OS] --> D
+    Components[Production Components] --> D
