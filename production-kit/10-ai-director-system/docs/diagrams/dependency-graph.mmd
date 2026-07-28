@@ -1,0 +1,56 @@
+# Dependency Graph
+
+# Module 10 Dependency Graph (Mermaid)
+
+```mermaid
+graph LR
+
+M05[Module 05<br/>Story Engine]
+--> M10[Module 10<br/>AI Director]
+
+M06[Module 06<br/>Character System]
+--> M10
+
+M08[Module 08<br/>AI Agent OS]
+--> M10
+
+M09[Module 09<br/>Production Components]
+--> M10
+
+M10 --> D1[Story Intelligence]
+M10 --> D2[Character Intelligence]
+M10 --> D3[Cinematic Intelligence]
+M10 --> D4[Prompt Intelligence]
+M10 --> D5[Decision Engine]
+M10 --> D6[Workflow Engine]
+M10 --> D7[Quality Intelligence]
+M10 --> D8[Production Intelligence]
+
+D8 --> M11[Module 11<br/>AI Studio Runtime]
+```
+
+---
+
+# Purpose
+
+Biểu đồ mô tả quan hệ phụ thuộc giữa Module 10 và các module khác trong Wild Story Lab OS, đồng thời thể hiện các thành phần nội bộ của AI Director.
+
+---
+
+# Dependency Rules
+
+- Module 10 phụ thuộc Module 05, 06, 08 và 09.
+- Module 11 sử dụng đầu ra của Module 10.
+- Các thành phần nội bộ giao tiếp thông qua Workflow Engine và Decision Engine.
+
+---
+
+# Related Documents
+
+- 02-architecture.md
+- 03-core-systems.md
+- EXECUTION_ENGINE_SPEC.md
+- DEPENDENCY_GRAPH_SPEC.md
+
+Version: 1.0.0
+Status: Complete

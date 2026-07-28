@@ -1,0 +1,71 @@
+# Sequence Diagram
+
+# Module 10 AI Director Sequence (Mermaid)
+
+```mermaid
+sequenceDiagram
+
+participant User
+participant Director as AI Director
+participant Story as Story Intelligence
+participant Character as Character Intelligence
+participant Prompt as Prompt Intelligence
+participant QA as Quality Intelligence
+participant Production as Production Engine
+participant Runtime as AI Studio Runtime
+
+User->>Director: Submit Story Request
+
+Director->>Story: Analyze Story Blueprint
+Story-->>Director: Story Plan
+
+Director->>Character: Validate Character DNA
+Character-->>Director: Character Plan
+
+Director->>Prompt: Generate Prompt Package
+Prompt-->>Director: Optimized Prompts
+
+Director->>QA: Execute Quality Gates
+QA-->>Director: PASS / FAIL
+
+alt QA PASS
+    Director->>Production: Build Production Package
+    Production-->>Director: Production Package
+    Director->>Runtime: Release Package
+    Runtime-->>User: Production Ready
+else QA FAIL
+    QA-->>Director: Issue Report
+    Director->>Story: Request Revision
+end
+```
+
+---
+
+# Purpose
+
+Mô tả trình tự tương tác giữa người dùng, AI Director và các thành phần cốt lõi trong quá trình tạo Production Package.
+
+---
+
+# Main Flow
+
+1. User gửi Story Request.
+2. AI Director phân tích Story.
+3. Character được kiểm tra và đồng bộ.
+4. Prompt được sinh và tối ưu.
+5. QA kiểm tra chất lượng.
+6. Nếu PASS → tạo Production Package và Release.
+7. Nếu FAIL → quay lại bước chỉnh sửa Story.
+
+---
+
+# Related Documents
+
+- README.md
+- docs/04-workflow.md
+- DIRECTOR_SEQUENCE.md
+- WORKFLOW.md
+- EXECUTION_ENGINE_SPEC.md
+
+Version: 1.0.0
+Status: Complete

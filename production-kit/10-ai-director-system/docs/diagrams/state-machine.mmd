@@ -1,0 +1,85 @@
+# State Machine
+
+# Module 10 State Machine (Mermaid)
+
+```mermaid
+stateDiagram-v2
+
+[*] --> Idle
+
+Idle --> StoryAnalysis : New Request
+StoryAnalysis --> StoryPlanning : Story Valid
+
+StoryPlanning --> ScenePlanning
+ScenePlanning --> ShotPlanning
+
+ShotPlanning --> CharacterDirection
+CharacterDirection --> CameraDirection
+
+CameraDirection --> PromptGeneration
+PromptGeneration --> QualityAssurance
+
+QualityAssurance --> Production : QA PASS
+QualityAssurance --> StoryPlanning : QA FAIL
+
+Production --> Release
+
+Release --> Completed
+
+Completed --> Idle
+
+Release --> Error
+Error --> Recovery
+Recovery --> StoryPlanning
+```
+
+---
+
+# State Descriptions
+
+## Idle
+Hệ thống chờ yêu cầu mới.
+
+## StoryAnalysis
+Phân tích Story Blueprint và Story Goal.
+
+## StoryPlanning
+Lập kế hoạch câu chuyện.
+
+## ScenePlanning
+Chia Scene và xác định thứ tự thực hiện.
+
+## ShotPlanning
+Thiết kế Camera, Lens, Motion và Composition.
+
+## CharacterDirection
+Điều phối Character DNA và hành vi.
+
+## CameraDirection
+Điều phối ngôn ngữ điện ảnh.
+
+## PromptGeneration
+Sinh Prompt cho các nền tảng AI Video.
+
+## QualityAssurance
+Kiểm tra Story QA, Prompt QA, Visual QA và Continuity QA.
+
+## Production
+Tạo Production Package.
+
+## Release
+Đóng gói Release Package.
+
+## Recovery
+Khôi phục sau lỗi và quay lại bước lập kế hoạch.
+
+---
+
+# Related Documents
+
+- DIRECTOR_STATE_MACHINE.md
+- 04-workflow.md
+- WORKFLOW.md
+
+Version: 1.0.0
+Status: Complete

@@ -1,0 +1,62 @@
+# Workflow Diagram
+
+# Module 10 Workflow (Mermaid)
+
+```mermaid
+flowchart TD
+
+A[User Request]
+--> B[Story Analysis]
+
+B --> C[Story Planning]
+
+C --> D[Scene Planning]
+
+D --> E[Shot Planning]
+
+E --> F[Character Direction]
+
+F --> G[Camera Direction]
+
+G --> H[Prompt Generation]
+
+H --> I[Quality Assurance]
+
+I --> J{QA PASS?}
+
+J -->|Yes| K[Production Package]
+
+K --> L[Release Package]
+
+L --> M[AI Studio Runtime]
+
+J -->|No| N[Revise Story / Prompt]
+
+N --> C
+```
+
+---
+
+# Workflow Stages
+
+1. Story Analysis
+2. Story Planning
+3. Scene Planning
+4. Shot Planning
+5. Character Direction
+6. Camera Direction
+7. Prompt Generation
+8. Quality Assurance
+9. Production Package
+10. Release Package
+
+---
+
+# Related Documents
+
+- docs/04-workflow.md
+- WORKFLOW.md
+- PIPELINE.md
+
+Version: 1.0.0
+Status: Complete
