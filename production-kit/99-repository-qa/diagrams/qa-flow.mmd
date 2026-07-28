@@ -1,0 +1,27 @@
+%% qa-flow.mmd
+flowchart TD
+
+A[Module Completed]
+-->B[Documentation Review]
+
+B-->C[Repository Audit]
+
+C-->D[Structure Validation]
+
+D-->E[Link Validation]
+
+E-->F[Version Audit]
+
+F-->G[Consistency Review]
+
+G-->H{QA Passed?}
+
+H-- No -->I[Fix Issues]
+
+I-->B
+
+H-- Yes -->J[Release Approval]
+
+J-->K[GitHub Ready]
+
+K-->L[Production Ready]

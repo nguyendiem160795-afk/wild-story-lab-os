@@ -1,0 +1,19 @@
+%% release-flow.mmd
+flowchart TD
+
+A[QA Passed]
+-->B[Release Approval]
+
+B-->C[Final Build Report]
+
+C-->D[Completion Certificate]
+
+D-->E[Version Verification]
+
+E-->F[Repository Freeze]
+
+F-->G[GitHub Release]
+
+G-->H[Production Release]
+
+H-->I[Post Release Review]

@@ -1,0 +1,27 @@
+%% repository-flow.mmd
+flowchart TD
+
+A[Repository]
+-->B[Module Inventory]
+
+B-->C[Documentation Audit]
+
+C-->D[Structure Audit]
+
+D-->E[Link Validation]
+
+E-->F[Version Audit]
+
+F-->G[Consistency Report]
+
+G-->H{Repository Ready?}
+
+H-- No -->I[Fix Repository]
+
+I-->C
+
+H-- Yes -->J[Release Approval]
+
+J-->K[GitHub Ready]
+
+K-->L[Production Ready]
