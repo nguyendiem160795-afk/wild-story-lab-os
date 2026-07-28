@@ -1,0 +1,34 @@
+# CODEOWNERS
+#
+# Wild Story Lab OS
+# Module 08 — AI Agent Operating System
+#
+# Replace the placeholder username below with the GitHub account(s)
+# responsible for reviewing changes.
+
+# Default owner
+* @your-github-username
+
+# Core documentation
+/docs/ @your-github-username
+
+# JSON schemas
+/schemas/ @your-github-username
+
+# Reusable templates
+/templates/ @your-github-username
+
+# Reference examples
+/examples/ @your-github-username
+
+# Registries
+/registry/ @your-github-username
+
+# Architecture Decision Records
+/adr/ @your-github-username
+
+# Assets
+/assets/ @your-github-username
+
+# GitHub configuration
+/.github/ @your-github-username
